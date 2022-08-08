@@ -5,3 +5,4 @@ Added by djna, cloned with ssh id
 no core ssh
 restart agent
 remove ssh agent id
+kill all agent
