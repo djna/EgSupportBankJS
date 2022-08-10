@@ -9,7 +9,7 @@ const filename = 'sample.txt';
 let emailAddresses = {};
 
 lineReader.eachLine(filename, function (line, last) {
-    let emailRegex = /(\w+)@(softwire.com)\b/g;
+    let emailRegex = /(\w+)@(.*)\b/g;
     let match;
     while (match = emailRegex.exec(line)) {
         let oneAddress = match[2];
