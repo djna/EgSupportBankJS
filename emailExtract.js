@@ -21,7 +21,6 @@ lineReader.eachLine(filename, function (line, last) {
        
         const sortedEmails = Object.entries(emailAddresses)
             .sort(([, countLeft], [, countRight]) => countRight - countLeft);
-        //  .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
         console.log(sortedEmails);
     }
